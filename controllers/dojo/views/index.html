@@ -1,0 +1,35 @@
+{% extends '../../../views/template.html' %}
+
+{% block menu %}
+	<a class="navbar-brand" href="/profile">Perfil</a>
+	<a class="navbar-brand" href='/user_logout'>Cerrar sesión</a>
+{% endblock %}
+
+{%block content%}
+<div class='container-fluid'>
+	<div class="row">
+		<div class="col-md-12">
+			<div>
+				<h1><span class="glyphicon glyphicon-home">  </span>  Directorio de Dojos</h1> 
+				<nav class='navbar navbar-default'>
+				{% block menuDojo %}
+					<a href="/new_dojo" class="navbar-brand">Registrar Dojo</a>
+					<a href="#" class="navbar-brand">Editar Dojo</a>
+					<a href="#" class="navbar-brand">Eliminar Dojo</a>
+				{%endblock%} 
+				</nav>
+			</div>
+			{% for dojo in dojos %}
+				{% if loop.first %}<div>{% endif %}
+							<h2><small>{{dojo.nombre}}</small></h2>
+							<p>Sensei: {{dojo.sensei}}</p>
+							<p>Direccion: {{dojo.direccion}}</p>
+							<p>Horario: {{dojo.horario}}</p>
+							<p>Telefono: {{dojo.telefono}}</p>
+							<p>Email: {{dojo.email}}</p>
+				{% if loop.last %} </div> {% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</div>	
+{%endblock%}

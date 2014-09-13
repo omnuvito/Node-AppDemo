@@ -1,0 +1,16 @@
+{% extends '../../../views/template.html' %}
+
+{%block content%}
+	<h1>Usuarios</h1>
+	{% for user in users %}
+		{% if loop.first %} <ol> {% endif %}
+			<li>
+				<div>
+					<p>{{user.nombre}}</p>
+					<p>{{user.apellido}}</p>
+					<p>{{user.nickname}}</p>
+				</div>
+			</li>
+		{% if loop.last %} </ol> {% endif %}
+	{% endfor %}
+{%endblock%}

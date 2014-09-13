@@ -1,0 +1,10 @@
+{% extends '../../../views/template.html' %}
+
+{% block menu %}
+	<a href="/profile">{{user}}</a>
+	<a href='/user_logout'>Cerrar sesión</a>
+{% endblock %}
+
+{%block content%}
+	<h2>Bienvenido {{user}}</h2>
+{%endblock%}

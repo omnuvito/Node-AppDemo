@@ -1,0 +1,26 @@
+{% extends '../../../views/template.html' %}
+
+{% block menu %}
+	<a class="navbar-brand" href='/dojo'>Dojos</a>
+	<a class="navbar-brand" href='/user_logout'>Cerrar sesión</a>
+{% endblock %}
+
+{%block content%}
+	<div class='container-fluid'>
+		<h1><span class="glyphicon glyphicon-user">  </span>  Perfil de usuario</h1>
+		<nav class='navbar navbar-default'>
+				{% block menuDojo %}
+					<a href="#" class="navbar-brand">Editar Usuario</a>
+					<a href="#" class="navbar-brand">Eliminar Usuario</a>
+				{%endblock%} 
+				</nav>
+		{% for profile in profiles %}
+			{% if loop.first %} <div> {% endif %}
+						<p>Nombre: {{profile.nombre}} {{profile.apellido}}</p>
+						<p>Username: {{profile.nickname}}</p>
+						<p>Email: {{profile.email}}</p>
+			{% if loop.last %} </div> {% endif %}
+		{% endfor %}
+	</div>
+	
+{%endblock%}

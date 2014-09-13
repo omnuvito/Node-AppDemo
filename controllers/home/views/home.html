@@ -1,0 +1,26 @@
+{% extends '../../../views/template.html' %}
+
+{% block menu %}
+	<a class="navbar-brand" href='/new_user'>Registrate</a>
+{%endblock%}
+
+{%block content %}
+<div class='row'>
+	<div class="col-md-4"></div>
+	<div class="col-md-4">
+		<h1 class='text-center'><span class="glyphicon glyphicon-user">  </span> Login Usuario</h1>
+		<form class="form-horizontal color-form" role='form' action='/user_login' method='POST'>
+			<div class='form-group'>
+				<label for="nickname">Usuario</label>
+				<input class='form-control' type='text' name='nickname'>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input class='form-control' type='password' name='password'>
+			</div>
+			<button class="btn btn-default" type='submit'>Entrar</button>
+		</form>
+	</div>
+	<div class="col-md-4"></div>
+</div>
+{%endblock%}
