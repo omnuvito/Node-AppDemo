@@ -37,7 +37,7 @@ app.use(session({
 }));
 
 //Routes.
-var port = process.env.PORT || CONFIG.port;
+var port = process.env.PORT || 5000;
 app.use(dojo);
 app.use(home);
 app.use(user);
