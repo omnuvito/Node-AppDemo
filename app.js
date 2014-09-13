@@ -37,8 +37,8 @@ app.use(session({
 }));
 
 //Routes.
+var port = process.env.PORT || CONFIG.port;
 app.use(dojo);
 app.use(home);
 app.use(user);
-app.listen(2000);
-console.log('Listening port: 2000');
+app.listen(port);
