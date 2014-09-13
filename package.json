@@ -13,6 +13,8 @@
     "express-session": "^1.0.4",
     "swig": "^1.3.2"
   },
-  "engine": "node",
+  "engine": {
+    "node": "0.10.30"
+  },
   "author": "José Alejandro Álvarez"
 }
