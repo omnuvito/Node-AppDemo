@@ -3,6 +3,7 @@ var morgan       = require('morgan');
 var bodyParser   = require('body-parser');
 var cookieParser = require('cookie-parser');
 var session      = require('express-session');
+var mongoose = require('mongoose');
 var MongoStore   = require('connect-mongo')(express);
 var bcrypt       = require('bcrypt');
 var swig		 = require('swig');
