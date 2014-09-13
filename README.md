@@ -12,4 +12,4 @@ Está en desarrollo, contiene:
 
 	2.1. Visualización de Dojos (Directorio de Dojos)
 
-Puedes probarla en:
+Puedes probarla en: http://node-appdemo.herokuapp.com/
