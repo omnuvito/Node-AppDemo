@@ -12,4 +12,14 @@ Está en desarrollo, contiene:
 
 	2.1. Visualización de Dojos (Directorio de Dojos)
 
-Puedes probarla en: http://node-appdemo.herokuapp.com/
+App-Demo is an application developed in NodeJS.
+It is under construction, this contain:
+
+1. User administration
+	
+	1.1. User Registration
+	1.2. User Login
+	1.3. View user profile.
+
+2. Dojo directory
+	2.1. Dojos profile.
