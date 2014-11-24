@@ -13,7 +13,7 @@ Está en desarrollo, contiene:
 	2.1. Visualización de Dojos (Directorio de Dojos)
 
 App-Demo is an application developed in NodeJS.
-It is under construction, this contain:
+It is under construction, contain:
 
 1. User administration
 	
